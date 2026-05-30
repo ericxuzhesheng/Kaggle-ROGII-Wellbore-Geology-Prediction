@@ -1,0 +1,8 @@
+split,kind,file_count,total_bytes
+train,horizontal,773,610219539
+train,typewell,773,37765307
+train,png,773,646882273
+test,horizontal,3,1096977
+test,typewell,3,104319
+test,png,0,0
+sample_submission,csv,1,254725
