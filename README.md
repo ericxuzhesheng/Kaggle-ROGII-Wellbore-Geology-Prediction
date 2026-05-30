@@ -49,9 +49,9 @@
 | `kaggle_kernel_v4_residual_optimized.ipynb` | 门控混合、残差裁剪、种子集成 | 13.764 |
 | `kaggle_kernel_v5_lgb_xgb_residual.ipynb` | LightGBM + XGBoost 残差集成 | 10.013 |
 | `kaggle_kernel_v6_regularized_robust_ensemble.ipynb` | 抗过拟合主线；打乱 GroupKFold、CatBoost 多样性 | **9.791** |
-| `kaggle_kernel_v7_full_retrain.ipynb` | 三项泄漏修复、Sakoe-Chiba DTW 特征、全量重训 | — |
+| `kaggle_kernel_v7_full_retrain.ipynb` | 三项泄漏修复、Sakoe-Chiba DTW 特征、全量重训 | 10.642 |
 | `kaggle_kernel_v8_robust.ipynb` | 日志驱动鲁棒性修复；分层 GroupKFold、更宽 pp 网格 | 10.143 |
-| `kaggle_kernel_v9_no_dtw.ipynb` | 移除 DTW（v8 Nelder-Mead 确认 LGB 权重 ≈ 0） | — |
+| `kaggle_kernel_v9_no_dtw.ipynb` | 移除 DTW（v8 Nelder-Mead 确认 LGB 权重 ≈ 0） | 10.461 |
 
 > 公榜覆盖约 26% 测试数据，最终结果使用另外 74%。模型选择以井级别 OOF 和隐藏区间诊断为主，公榜仅作提交可行性的完整性核查。
 
@@ -154,9 +154,9 @@ Additional design principles:
 | `kaggle_kernel_v4_residual_optimized.ipynb` | Gated blending, residual clipping, seed ensemble | 13.764 |
 | `kaggle_kernel_v5_lgb_xgb_residual.ipynb` | LightGBM + XGBoost residual ensemble | 10.013 |
 | `kaggle_kernel_v6_regularized_robust_ensemble.ipynb` | Anti-overfitting line; shuffled GroupKFold, CatBoost diversity | **9.791** |
-| `kaggle_kernel_v7_full_retrain.ipynb` | Three leakage fixes, Sakoe-Chiba DTW features, full-data retrain | — |
+| `kaggle_kernel_v7_full_retrain.ipynb` | Three leakage fixes, Sakoe-Chiba DTW features, full-data retrain | 10.642 |
 | `kaggle_kernel_v8_robust.ipynb` | Log-driven robustness fixes; stratified GroupKFold, wider pp grid | 10.143 |
-| `kaggle_kernel_v9_no_dtw.ipynb` | DTW removed after v8 Nelder-Mead confirmed LGB weight ≈ 0 | — |
+| `kaggle_kernel_v9_no_dtw.ipynb` | DTW removed after v8 Nelder-Mead confirmed LGB weight ≈ 0 | 10.461 |
 
 > The Public LB covers approximately 26% of test data; hidden-LB generalization is the primary optimization target. Public LB is used only as a notebook-rerun sanity check.
 
